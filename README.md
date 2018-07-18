@@ -25,13 +25,13 @@ To reproduce results in *Table 1: Next Event Prediction*, line *Fully optimized 
 
 To reproduce results in *Table 2: NEP performance in cold-start regime*, lines *Fully optimized MetaProd2vec* from paper:
 
-`docker run -ti --name=music_1_cs_mp2v_0 w2v_reco_hyperparameters_matter:latest /bin/bash -c "python src/main.py --path_data='data/music_1.npy' --p2v=0 --window_size=7 --it=90 --sample=0.0001 --power_alpha=-0.5 --cold_start=0`
+`docker run -ti --name=music_1_cs_mp2v_0 w2v_reco_hyperparameters_matter:latest /bin/bash -c "python src/main.py --path_data='data/music_1.npy' --p2v=0 --window_size=7 --it=90 --sample=0.0001 --power_alpha=-0.5 --cold_start=0"`
 
-`docker run -ti --name=music_1_cs_mp2v_2 w2v_reco_hyperparameters_matter:latest /bin/bash -c "python src/main.py --path_data='data/music_1.npy' --p2v=0 --window_size=7 --it=90  --sample=0.0001 --power_alpha=-0.5 --cold_start=2`
+`docker run -ti --name=music_1_cs_mp2v_2 w2v_reco_hyperparameters_matter:latest /bin/bash -c "python src/main.py --path_data='data/music_1.npy' --p2v=0 --window_size=7 --it=90  --sample=0.0001 --power_alpha=-0.5 --cold_start=2"`
 
-`docker run -ti --name=music_2_cs_mp2v_0 w2v_reco_hyperparameters_matter:latest /bin/bash -c "python src/main.py --path_data='data/music_2.npy' --p2v=0 --window_size=3 --it=150 --sample=0.0001 --power_alpha=-0.5 --cold_start=0`
+`docker run -ti --name=music_2_cs_mp2v_0 w2v_reco_hyperparameters_matter:latest /bin/bash -c "python src/main.py --path_data='data/music_2.npy' --p2v=0 --window_size=3 --it=150 --sample=0.0001 --power_alpha=-0.5 --cold_start=0"`
 
-`docker run -ti --name=music_2_cs_mp2v_2 w2v_reco_hyperparameters_matter:latest /bin/bash -c "python src/main.py --path_data='data/music_2.npy' --p2v=0 --window_size=3 --it=150 --sample=0.0001 --power_alpha=-0.5 --cold_start=2`
+`docker run -ti --name=music_2_cs_mp2v_2 w2v_reco_hyperparameters_matter:latest /bin/bash -c "python src/main.py --path_data='data/music_2.npy' --p2v=0 --window_size=3 --it=150 --sample=0.0001 --power_alpha=-0.5 --cold_start=2"`
 
 ## Usage without Docker
 
